@@ -4,11 +4,59 @@
 #include<stdlib.h>
 #include<process.h>
 
+void names()
+{
+ rectangle(10,10,630,470);
+ rectangle(30,30,610,450);
+ ellipse(30,30,270,360,50,50);
+ ellipse(30,30,270,360,30,30);
+ ellipse(610,30,180,270,50,50);
+ ellipse(610,30,180,270,30,30);
+ ellipse(30,450,0,90,50,50);
+ ellipse(30,450,0,90,30,30);
+ ellipse(610,450,90,180,50,50);
+ ellipse(610,450,90,180,30,30);
+
+ setfillstyle(9,RED);
+ floodfill(20,20,WHITE);
+ setfillstyle(6,YELLOW);
+ floodfill(70,50,WHITE);
+// putpixel(580,430,RED);
+ floodfill(70,430,WHITE);
+ floodfill(580,50,WHITE);
+ floodfill(580,430,WHITE);
+
+ delay(30);
+ settextstyle(8,HORIZ_DIR,3);
+ outtextxy(60,80,"PROJECT       : ");
+ line(60,110,160,110);
+ outtextxy(60,140,"SUBMITTED TO : ");
+ line(60,170,240,170);
+ outtextxy(60,200,"SUBMITTED BY : ");
+ line(60,230,240,230);
+ delay(100);
+ settextstyle(8,HORIZ_DIR,1);
+ outtextxy(270,85,"TAJ MAHAL");
+ outtextxy(270,145,"GURPREET MAM");
+ outtextxy(270,205,"Sahil Mehra(2017CSA1146)");
+ outtextxy(270,245,"Parul(2017CSA1148)");
+ outtextxy(270,285,"Piyush Khanna(2017CSA1149)");
+ outtextxy(270,325,"Prabhmeet Kaur(2017CSA1150)");
+
+ delay(100);
+ for(int i=0;i<=300;i++)
+ {
+  delay(10);
+  putpixel(random(460)+80,random(280)+80,random(15));
+ }
+ delay(3200);
+ cleardevice();
+}
 void main()
 {
 int gd=DETECT,gm;
 initgraph(&gd,&gm,"C:\\TurboC3\\BGI");
-
+names();
 line(0,440,639,440);				//BOTTOM LINE
 settextstyle(8,HORIZ_DIR,4);
 outtextxy(227,438,"TAJ MAHAL");
@@ -599,10 +647,10 @@ floodfill(426,362,15);    //LFT1
 floodfill(489,358,15);    //LFT2
 floodfill(489,438,15);    //LFB
 
-putpixel(461,255,RED);
-putpixel(182,255,RED);
-putpixel(345,62,RED);
-putpixel(184,255,RED);
+//putpixel(461,255,RED);
+//putpixel(182,255,RED);
+//putpixel(345,62,RED);
+//putpixel(184,255,RED);
 setfillstyle(10,15);
 floodfill(181,255,15);
 floodfill(461,255,15);
