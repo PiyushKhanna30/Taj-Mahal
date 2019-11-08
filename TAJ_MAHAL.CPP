@@ -10,6 +10,15 @@ int gd=DETECT,gm;
 initgraph(&gd,&gm,"C:\\TurboC3\\BGI");
 
 line(0,440,639,440);				//BOTTOM LINE
+settextstyle(8,HORIZ_DIR,4);
+outtextxy(227,438,"TAJ MAHAL");
+
+ellipse(540,50,128,360,50,50);
+ellipse(550,30,155,337,43,48);
+//putpixel(500,35,RED);
+setfillstyle(1,WHITE);
+floodfill(500,35,WHITE);
+
 //---------------------LEFT PILLAR----------------------
 
 line(8,440,13,373);
@@ -243,10 +252,10 @@ line(360,440,360,350);
 setfillstyle(9,7);
 floodfill(277,386,15);
 
-rectangle(295+4,370,345-4,440);
-rectangle(292+4,367,348-4,440);
+rectangle(295,355,345,440);
+rectangle(292,352,348,440);
 setfillstyle(1,15);
-floodfill(294+4,369,15);
+floodfill(294+4,353,15);
 
 line(302,405,302,440);
 line(338,405,338,440);
@@ -332,8 +341,13 @@ ellipse(321,238,50,128,140,50);        //GUMBAK OF TAJ END
 delay(300);
 setfillstyle(11,15);                   //TAJ TOP DESIGN
 floodfill(322,160,15);
+floodfill(295,62,15);
+floodfill(345,62,15);
+floodfill(335,62,15);
+floodfill(325,62,15);
 setfillstyle(9,15);                    //TAJ TOP BOTTOM BORDER
 floodfill(322,193,15);
+
 //-----------------------LEFT PART OF TAJ MAHAL BUILDING--------
 rectangle(150,283,225,294);
 line(150,298,225,298);
@@ -409,7 +423,7 @@ line(338-200-1,405-77,338-200-1,440-77-2);
 ellipse(327-200,405-77,105,180,20,15);
 ellipse(313-200+4,405-77,360,80,20,15);
 
-                           // LEFT B BOTTOM WINDOW BOX
+			   // LEFT B BOTTOM WINDOW BOX
 line(141,305+70,141,440);
 line(101,310+70,101,440);
 line(141,305+70,101,310+70);
@@ -425,7 +439,7 @@ floodfill(179,416,15);
 rectangle(178,415-75,197,440-76);    //LFB
 setfillstyle(7,15);
 floodfill(179,415-75+1,15);
-		                           //LBT
+					   //LBT
 line(130-3,417-76,130-3,440-76-3);
 line(113+3,420-76,113+3,440-76);
 line(113+3,420-76,130-3,417-76);
@@ -492,56 +506,56 @@ line(146+270+135,291,97+270+135,283);
 
 rectangle(155+270,302,220+270,364);            //RIGHT F TOP WINDOW BOX
 rectangle(155+270,302+70,220+270,364+75);      //RIGHT F BOTTOM WINDOW BOX
-   
-                               	   //RIGHT F BOTTOM WINDOW
+
+				   //RIGHT F BOTTOM WINDOW
 line(302+140-5,405,302+140-5,440);
 line(338+140+5,405,338+140+5,440);
 ellipse(327+140+5,405,108,180,35,30);
 ellipse(313+140-5,406,360,74,35,30);
 
-                                     //RIGHT F BOTTOM WINDOW
+				     //RIGHT F BOTTOM WINDOW
 line(302+140-5,405-77,302+140-5,440-77);
 line(338+140+5,405-77,338+140+5,440-77);
 ellipse(327+140,405-77,105,180,30,25);
 ellipse(313+140,405-77,360,80,30,25);
-                                  // RIGHT B TOP WINDOW BOX
+				  // RIGHT B TOP WINDOW BOX
 line(141+255+150,305+5,141+255+150,360+5);
 line(101+255+150,310-5,101+255+150,365-5);
 line(101+255+150,305,141+255+150,310);
 line(101+255+150,360,141+255+150,365);
 
-                                //RIGHT B BOTTOM WINDOW BOX
+				//RIGHT B BOTTOM WINDOW BOX
 line(141+255+150,305+5+75-5,141+255+150,440);
 line(101+255+150,310-5+75-5,101+255+150,440);
 line(101+255+150,305+75-5,141+255+150,310+75-5);
-                             //RFB
+			     //RFB
 rectangle(178+273,415,197+273,439);
 setfillstyle(7,15);
 floodfill(179+273,416,15);
 
-                         //RFT
+			 //RFT
 rectangle(178+273,415-75,197+273,439-75);
 setfillstyle(7,15);
 floodfill(179+273,416-75,15);
-                               //RBT
+			       //RBT
 line(130-3+403,440-76-2,130-3+403,417-76+2);
 line(113+3+403,440-76-2,113+3+403,420-76-2);
 line(113+3+403,417-76,130-3+403,420-76);
 floodfill(114+3+403,423-76,15);
 
-                               //RBB
+			       //RBB
 line(130-3+403,440+1-2,130-3+403,417+1+2);
 line(113+3+403,440+1-2,113+3+403,420+1-2);
 line(113+3+403,417+1,130-3+403,420+1);
 line(113+3+403,440,130-3+403,440);
 floodfill(114+3+403,423+1,15);
-                              //RIGHT B TOP WINDOW
+			      //RIGHT B TOP WINDOW
 line(302+204+4,405-77,302+204+4,440-77-2);
 line(338+204-1,405-77,338+204-1,440-77+2);
 ellipse(327+204,405-77,105,180,20,15);
 ellipse(313+204+4,405-77,360,80,20,15);
 
-                                //RIGHT B BOTTOM WINDOW
+				//RIGHT B BOTTOM WINDOW
 line(302+204+4,405,302+204+4,440-1);
 line(338+204-1,405,338+204-1,440);
 ellipse(327+204,405,105,180,20,15);
@@ -572,7 +586,7 @@ floodfill(185,224,15);
 floodfill(465,224,15);
 
 //WINDOWS
-setfillstyle(11,15);
+setfillstyle(9,7);
 floodfill(139,438,15);    //LBB
 floodfill(139,358,15);    //LBT
 floodfill(219,362,15);    //LFT1
@@ -584,6 +598,21 @@ floodfill(545,358,15);    //LBT
 floodfill(426,362,15);    //LFT1
 floodfill(489,358,15);    //LFT2
 floodfill(489,438,15);    //LFB
+
+putpixel(461,255,RED);
+putpixel(182,255,RED);
+putpixel(345,62,RED);
+putpixel(184,255,RED);
+setfillstyle(10,15);
+floodfill(181,255,15);
+floodfill(461,255,15);
+
+for (int i=0;i<=50;i++)
+{
+putpixel(random(640),random(200),15);
+putpixel(random(640),random(40)+440,random(15));
+delay(10);
+}
 
 getch();
 closegraph();
