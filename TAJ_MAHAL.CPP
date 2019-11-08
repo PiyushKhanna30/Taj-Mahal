@@ -614,6 +614,30 @@ putpixel(random(640),random(40)+440,random(15));
 delay(10);
 }
 
+//sound
+int temp=1;
+while(temp<3)
+{
+  sound(500);
+  delay(1000);
+  sound(558.2500);
+  delay(1000);
+  sound(620.100);
+  delay(1000);
+  sound(679.2551);
+  delay(1000);
+  sound(725.4565);
+  delay(1000);
+  sound(780.9909);
+  delay(1000);
+  sound(830.10009);
+  delay(1000);
+  sound(910.11009);
+  delay(1000);
+  temp++;
+}
+nosound();
+
 getch();
 closegraph();
 }
