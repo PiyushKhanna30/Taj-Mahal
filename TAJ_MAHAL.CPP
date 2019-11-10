@@ -39,9 +39,10 @@ void names()
  outtextxy(270,85,"TAJ MAHAL");
  outtextxy(270,145,"GURPREET MAM");
  outtextxy(270,205,"Sahil Mehra(2017CSA1146)");
- outtextxy(270,245,"Parul(2017CSA1148)");
- outtextxy(270,285,"Piyush Khanna(2017CSA1149)");
- outtextxy(270,325,"Prabhmeet Kaur(2017CSA1150)");
+ outtextxy(270,245,"Parminder(2017CSA1147)");
+ outtextxy(270,285,"Parul(2017CSA1148)");
+ outtextxy(270,325,"Piyush Khanna(2017CSA1149)");
+ outtextxy(270,365,"Prabhmeet Kaur(2017CSA1150)");
 
  delay(100);
  for(int i=0;i<=300;i++)
@@ -655,32 +656,56 @@ setfillstyle(10,15);
 floodfill(181,255,15);
 floodfill(461,255,15);
 
-for (int i=0;i<=50;i++)
-{
-putpixel(random(640),random(200),15);
-putpixel(random(640),random(40)+440,random(15));
-delay(10);
-}
-
 //sound
 int temp=1;
 while(temp<3)
 {
   sound(500);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(40)+440,random(15));
   delay(1000);
+
   sound(558.2500);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(40)+440,random(15));
   delay(1000);
+
   sound(620.100);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(40)+440,random(15));
   delay(1000);
+
   sound(679.2551);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(40)+440,random(15));
   delay(1000);
+
   sound(725.4565);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(40)+440,random(15));
   delay(1000);
+
   sound(780.9909);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(40)+440,random(15));
   delay(1000);
+
   sound(830.10009);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(40)+440,random(15));
   delay(1000);
+
   sound(910.11009);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(200),15);
+  putpixel(random(640),random(40)+440,random(15));
   delay(1000);
   temp++;
 }
