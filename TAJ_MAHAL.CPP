@@ -39,10 +39,7 @@ void names()
  outtextxy(270,85,"TAJ MAHAL");
  outtextxy(270,145,"GURPREET MAM");
  outtextxy(270,205,"Sahil Mehra(2017CSA1146)");
- outtextxy(270,245,"Parminder(2017CSA1147)");
- outtextxy(270,285,"Parul(2017CSA1148)");
- outtextxy(270,325,"Piyush Khanna(2017CSA1149)");
- outtextxy(270,365,"Prabhmeet Kaur(2017CSA1150)");
+ outtextxy(270,245,"Piyush Khanna(2017CSA1149)");
 
  delay(100);
  for(int i=0;i<=300;i++)
